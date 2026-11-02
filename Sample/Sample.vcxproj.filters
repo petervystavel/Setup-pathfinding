@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{93995380-89BD-4B04-88EB-625FBE52EBFB}</UniqueIdentifier>
+            <Extensions>h;hh;hpp;hxx;h++;tpp;inl;ipp;inc;xsd</Extensions>
+        </Filter>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+            <Extensions>c;cc;cp;cpp;cxx;c++;ccm;cppm;cxxm;c++m;ixx;def;idl;odl;asm</Extensions>
+        </Filter>
+        <Filter Include="Images">
+            <UniqueIdentifier>{6E901252-3135-5382-5769-143D295A57A6}</UniqueIdentifier>
+            <Extensions>jpg;jpeg;png;dds;bmp;tif;tiff;gif;ico;svg</Extensions>
+        </Filter>
+        <Filter Include="Shaders">
+            <UniqueIdentifier>{63DC7891-1761-5457-00B4-038C0E2B740B}</UniqueIdentifier>
+            <Extensions>hlsl;glsl;shader;gdshader;vs;vert;ps;frag</Extensions>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{67DA6AB6-F800-4C08-8B7A-83BB121AAD01}</UniqueIdentifier>
+            <Extensions>rc;cur;dlg;rc2;rct;bin;rgs;resx;wav;mfcribbon-ms</Extensions>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="$(SolutionDir)..\src\Sample\DummyEntity.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="$(SolutionDir)..\src\Sample\SampleScene.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="$(SolutionDir)..\src\Sample\DummyEntity.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Sample\main.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="$(SolutionDir)..\src\Sample\SampleScene.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+    <ItemGroup>
+    </ItemGroup>
+</Project>
