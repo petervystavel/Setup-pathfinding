@@ -31,18 +31,12 @@ private:
 	cpu_mesh m_meshShip;
 	cpu_mesh m_meshMissile;
 	cpu_mesh m_meshSphere;
-	cpu_texture m_textureBird;
-	cpu_texture m_textureEarth;
 	//cpu_rt* m_rts[1];
-
-	// UI
-	cpu_sprite* m_pSprite;
 
 	// Shader
 	cpu_material m_materialShip;
 	cpu_material m_materialMissile;
 	cpu_material m_materialMoon;
-	cpu_material m_materialEarth;
 
 	// 3D
 	Ship* m_pShip;

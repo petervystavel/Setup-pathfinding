@@ -61,31 +61,20 @@ void App::OnStart()
 
 	// Resources
 	m_font.Create(cpuDevice.GetHeight()<=512 ? 14 : 28);
-	m_textureBird.Load("bird_amiga.png");
-	m_textureEarth.Load("earth.png");
 	m_meshShip.CreateSpaceship();
 	m_meshMissile.CreateSphere(0.5f);
 	m_meshSphere.CreateSphere(2.0f, 12, 12);
 	//m_rts[0] = cpuEngine.CreateRT();
 
-	// UI
-	m_pSprite = cpuEngine.CreateSprite();
-	m_pSprite->pTexture = &m_textureBird;
-	m_pSprite->CenterAnchor();
-	m_pSprite->x = 40;
-	m_pSprite->y = 0;
-
 	// Shader
 	m_materialShip.color = cpu::ToColor(255, 128, 0);
 	m_materialMissile.ps = MissileShader;
 	m_materialMoon.ps = MoonShader;
-	m_materialEarth.pTexture = &m_textureEarth;
 
 	// 3D
 	m_missileSpeed = 10.0f;
 	m_pEarth = cpuEngine.CreateEntity();
 	m_pEarth->pMesh = &m_meshSphere;
-	m_pEarth->pMaterial = &m_materialEarth;
 	m_pEarth->transform.pos.x = 3.0f;
 	m_pEarth->transform.pos.y = 3.0f;
 	m_pEarth->transform.pos.z = 5.0f;
@@ -141,9 +130,6 @@ void App::OnUpdate()
 
 	float dt = cpuTime.delta;
 	float time = cpuTime.total;
-
-	// Move sprite
-	m_pSprite->y = 60 + cpu::RoundToInt(sinf(time)*20.0f);
 
 	// Turn earth
 	m_pEarth->transform.AddYPR(-dt);
