@@ -1,0 +1,196 @@
+{
+    "projects": {
+        "09F135FD-31AB-291C-0589-61750DCD4D5E": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "SDL3-static.lib",
+                    "version.lib",
+                    "imm32.lib",
+                    "cfgmgr32.lib",
+                    "setupapi.lib",
+                    "winmm.lib",
+                    "gdi32.lib",
+                    "user32.lib",
+                    "shell32.lib",
+                    "ole32.lib",
+                    "oleaut32.lib",
+                    "advapi32.lib",
+                    "SDL3_ttf-static.lib",
+                    "usp10.lib",
+                    "rpcrt4.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/SDL3/include",
+                    "$(SolutionDir)../lib/SDL3/include/TTF"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/SDL3/lib/x64"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "621806D6-0FB9-07AA-403D-6CBF7E3A77B7"
+            ],
+            "dependents": [],
+            "name": "Sample",
+            "property-lib": false,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "4DB6713C-7289-7BF3-04F1-52B665DB52FA": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "cpu-core-debug.lib",
+                    "cpu-render-debug.lib",
+                    "cpu-engine-debug.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/cpulib/lib"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [],
+            "name": "Pacman3D",
+            "property-lib": false,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": true
+        },
+        "55D558E7-730B-2D02-4EA7-010D520A5BF6": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [],
+            "name": "Pathfinding",
+            "property-lib": true,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "5E3640D4-298C-2A59-7102-140A0F5853EE": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "SDL3-static.lib",
+                    "version.lib",
+                    "imm32.lib",
+                    "cfgmgr32.lib",
+                    "setupapi.lib",
+                    "winmm.lib",
+                    "gdi32.lib",
+                    "user32.lib",
+                    "shell32.lib",
+                    "ole32.lib",
+                    "oleaut32.lib",
+                    "advapi32.lib",
+                    "SDL3_ttf-static.lib",
+                    "usp10.lib",
+                    "rpcrt4.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/SDL3/include",
+                    "$(SolutionDir)../lib/SDL3/include/TTF"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/SDL3/lib/x64"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "621806D6-0FB9-07AA-403D-6CBF7E3A77B7",
+                "55D558E7-730B-2D02-4EA7-010D520A5BF6"
+            ],
+            "dependents": [],
+            "name": "Sandbox",
+            "property-lib": false,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "621806D6-0FB9-07AA-403D-6CBF7E3A77B7": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "SDL3-static.lib",
+                    "version.lib",
+                    "imm32.lib",
+                    "cfgmgr32.lib",
+                    "setupapi.lib",
+                    "winmm.lib",
+                    "gdi32.lib",
+                    "user32.lib",
+                    "shell32.lib",
+                    "ole32.lib",
+                    "oleaut32.lib",
+                    "advapi32.lib",
+                    "SDL3_ttf-static.lib",
+                    "usp10.lib",
+                    "rpcrt4.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/SDL3/include",
+                    "$(SolutionDir)../lib/SDL3/include/TTF"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/SDL3/lib/x64"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [],
+            "name": "LightEngine",
+            "property-lib": true,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        }
+    },
+    "projects_name_to_guid": {
+        "LightEngine": "779C3976-29A9-4279-5BC3-44E709E71B4F",
+        "Pacman3D": "4DB6713C-7289-7BF3-04F1-52B665DB52FA",
+        "Sample": "09F135FD-31AB-291C-0589-61750DCD4D5E",
+        "pathfinding": "60CA1274-6998-0873-44F9-725776DF630A",
+        "sandbox": "5E3640D4-298C-2A59-7102-140A0F5853EE"
+    },
+    "solution_guid": "09897670-78A6-6932-7C36-769D08BF3B47",
+    "solution_name": "LightEngine",
+    "startup_project": "",
+    "version": "2.0"
+}
